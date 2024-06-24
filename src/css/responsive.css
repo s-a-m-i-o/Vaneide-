@@ -1,24 +1,31 @@
-@media(max-width:450px) {
+@media(max-width:480px) {
     .header {
         flex-direction: column;
-        height: 190px;
+        height: 100%;
     }
 
     .logo {
-        flex-direction: column;
+        width: 100%;
         padding: 5px;
+        justify-content: space-around;
+        align-items: center;
     }
 
     .logo img {
         width: 90px;
     }
 
+    .header .menu {
+        flex-direction: column;
+    }
+
     .menu li.item {
-        border: none;
+        border: 0;
+        border-bottom: 1px solid #fff;
         font-size: 15px;
         padding: 3px 10px;
-        background-color: rgb(188, 130, 243);
-        border-bottom: 3px solid purple;
+        margin: 0;
+        border-radius: 0;
     }
     .conteudo {
         width: 100%;
