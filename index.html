@@ -22,6 +22,7 @@
 
     <link rel="stylesheet" href="src/css/reset.css">
     <link rel="stylesheet" href="src/css/estilos.css">
+    <link rel="stylesheet" href="./src/fontes/css/all.min.css">
     <link rel="stylesheet" href="./src/css/carrossel.css">
     <link rel="stylesheet" href="src/css/responsive.css">
 
@@ -32,45 +33,89 @@
     <header class="header">
 
         <div class="logo">
-            <img src="src/img/inicio1.gif" alt="Logo do site">
-            <h1>Vaneide Cabelereira</h1>
+            <h1>Vaneide Health & Beauty</h1>
         </div>
-        <!-- <nav>
-            <ul class="menu menu1">
-                <li class="item menu2"><a href="#">Auriculoterapia</a></li>
-                <li class="item menu2"><a href="#">Reflexologia</a></li>
-                <li class="item menu2"><a href="#">Cabelos</a></li>
-                <li class="item menu2"><a href="#">Unhas</a></li>
-                <li class="item menu2"><a href="#">Contato</a></li>
-            </ul>
-        </nav> -->
-
-
     </header>
 
 
-    <div class="carrossel">
-        <img src="./src/img/masso.png" alt="Massoterapia">
-        <img src="./src/img/corte.png" alt="Corte de cabelo">
-        <img src="./src/img/unha.png" alt="Manicure">
-        <img src="./src/img/escova.png" alt="Cabelereira">
-    </div>
+    <section class="carrossel">
+        <img src="./src/img/corte.png" alt="Massoterapia">
+        <img src="./src/img/unha.png" alt="Corte de cabelo">
+        <img src="./src/img/aurico.jpg" alt="Auriculoterapia">
+        <img src="./src/img/corte.png" alt="Cabelereira">
+    </section>
 
-    <footer class="footer">
+    <section id="servicos" class="servicos">
+        <div class="item auriculo">
+            <h1 class="subtitulo">Auriculoterapia</h1>
 
-        <nav>
             <ul>
-                <li>instagram</li>
-                <li>Face</li>
-                <li>Whata</li>
+                <li>Sementes</li>
+                <li>Massagem ou pressa</li>
+                <li>Esferas magneticas</li>
             </ul>
-        </nav>
-
-        <div class="criador">
-            <p>J<span>&</span>S Developers</p>
         </div>
 
+        <div class="item reflexo">
+            <h1 class="subtitulo">Reflexologia</h1>
+
+            <ul>
+                <li>Redução de Estresse e Ansiedade</li>
+                <li>Melhora Circulação Sanguinea</li>
+                <li>Alívio a Dor</li>
+                <li>Meloria da Função dos Órgãos</li>
+                <li>Desintoxixação</li>
+            </ul>
+        </div>
+
+        <div class="item cabelo">
+            <h1 class="subtitulo">Cabelos</h1>
+
+            <ul>
+                <li>Corte</li>
+                <li>Escova</li>
+                <li>Prancha</li>
+                <li>Tintura</li>
+            </ul>
+        </div>
+
+        <div class="item unhas">
+            <h1 class="subtitulo">Unhas</h1>
+
+            <ul>
+                <li>Limpeza e Preparação das Unhas</li>
+                <li>Cuidado com cutículas</li>
+                <li>Aplização de Esmalte</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="contato">
+        <ul>
+            <li><i class="item fa-brands fa-whatsapp"></i></li>
+            <li><i class="item fa-brands fa-instagram"></i></li>
+            <li><i class="item fa-brands fa-facebook"></i></li>
+        </ul>
+    </section>
+
+    <footer class="footer">
+        <div class="direitos">
+            <p>&copy;<span class="menor"> Todos os direitos reservados</span></p>
+
+            <nav>
+                <ul>
+                    <li><i class="fa-brands fa-whatsapp"></i></li>
+                    <li><i class="fa-brands fa-instagram"></i></li>
+                    <li><i class="fa-brands fa-facebook"></i></li>
+                </ul>
+            </nav>
+        </div>
     </footer>
+
+    <div class="criador">
+        <a href="#" target="_blank">J<span>&</span>S Developers</a>
+    </div>
+    
 
     <script type="text/javascript" src="./src/js/carrossel.js"></script>
 </body>

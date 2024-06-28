@@ -1,17 +1,20 @@
-
 .header {
-    background-color: #fff;
+    background-color: #e7e6e6;
     display: flex;
     flex-direction: column;
+    border-bottom: 3px solid #232323;
 }
 
 .header .logo {
     display: flex;
     align-items: center;
+    justify-content: center;
     padding: 5px;
+    height: 80px;
 }
 
 .header .logo h1 {
+    font-size: 3rem;
     font-weight: 200;
     font-family: 'Dancing Script';
 
@@ -21,23 +24,147 @@
     width: 120px;
 }
 
-.header nav {
-    background-color: #232323;
-    display: block;
-}
-
-.header .menu {
-    height: 4.0rem;
+.servicos .menu {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+.carrossel {
+    position: relative;
+    width: 100%;
+    margin: auto;
+    border-bottom: 3px solid #232323;
+}
+
+.carrossel img {
+    width: 100%;
+    transition: 0.5s ease-in-out;
+}
+
+.servicos {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.servicos .item {
+    border: 2px solid #232323;
+    margin: 7px;
+    padding: 30px;
+    width: 300px;
+    height: 350px;
+    border-radius: 7px;
+    box-shadow: 2px 2px 2px #232323;
+    background-color: #e7e6e6;
+}
+
+.servicos .item .subtitulo {
+    text-decoration: underline;
+}
+
+.servicos .subtitulo {
+    font-family: 'Dancing Script';
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.servicos ul {
+    list-style-type: circle;
+}
+
+.servicos li {
+    margin: 7px;
+}
+
+
+.contato {
+    background-color: #e7e6e6;
+    height: 300px;
+    text-align: center;
+    border: 2px solid #232323;
+}
+
+.contato ul {
+    display: flex;
     justify-content: space-around;
+    align-items: center;
+    height: 300px;
 }
 
-.header .menu a {
+.contato ul .item {
+    font-size: 5rem;
+    transition: .3s;
+}
+
+.contato li:hover .item.fa-whatsapp {
+    color: green;
+}
+
+.contato li:hover .item.fa-instagram {
+    color: rgb(209, 45, 72);
+}
+
+.contato li:hover .item.fa-facebook {
+    color: blue;
+}
+
+.footer {
+    background-color: #232323;
     color: #fff;
-    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+    height: 50px;
 }
 
-.header .menu a:hover {
-    color: yellow;
+.footer .direitos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer .direitos .menor {
+    font-size: 0.7rem;
+}
+
+.footer .direitos ul {
+    display: flex;
+    align-items: center;
+}
+
+.footer .direitos li {
+    margin: 5px;
+}
+
+.footer li:hover .fa-whatsapp {
+    color: green;
+}
+
+.footer li:hover .fa-instagram {
+    color: rgb(209, 45, 72);
+}
+
+.footer li:hover .fa-facebook {
+    color: blue;
+}
+
+.criador {
+    background-color: #232323;
+    text-align: right;
+    }
+
+    .criador a {
+        color: rgb(112, 16, 112);
+        font-size: 0.6rem;
+        text-align: right;
+        font-weight: bold;
+        
+    }
+
+.criador span {
+    font-size: 0.5rem;
 }
