@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,51 +9,70 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
 
     <title>Vaneide Cabelereira</title>
 
     <link rel="stylesheet" href="src/css/reset.css">
     <link rel="stylesheet" href="src/css/estilos.css">
+    <link rel="stylesheet" href="./src/css/carrossel.css">
     <link rel="stylesheet" href="src/css/responsive.css">
 
 </head>
+
 <body>
 
     <header class="header">
 
         <div class="logo">
-            <img src="src/img/logo.jpg" alt="Logo do site">
+            <img src="src/img/inicio1.gif" alt="Logo do site">
             <h1>Vaneide Cabelereira</h1>
-            <span class="menu material-symbols-outlined">
-                menu
-            </span>
         </div>
-        <nav>
+        <!-- <nav>
             <ul class="menu menu1">
-                <li class="item menu2"><a href="cabelo.html">Cabelos</a></li>
-                <li class="item menu2">Unhas</li>
-                <li class="item menu2">Reflexologia</li>
-                <li class="item menu2">Contato</li>
+                <li class="item menu2"><a href="#">Auriculoterapia</a></li>
+                <li class="item menu2"><a href="#">Reflexologia</a></li>
+                <li class="item menu2"><a href="#">Cabelos</a></li>
+                <li class="item menu2"><a href="#">Unhas</a></li>
+                <li class="item menu2"><a href="#">Contato</a></li>
             </ul>
-        </nav>
+        </nav> -->
 
-        
+
     </header>
-    
 
-    <section class="conteudo">
 
-        <img src="src/img/inicio1.gif" alt="" class="imagem">
-        <p class="texto">
-            Cuidar dos cabelos é uma jornada de amor-próprio e autoexpressão.
-        </p>
-
-    </section>
+    <div class="carrossel">
+        <img src="./src/img/masso.png" alt="Massoterapia">
+        <img src="./src/img/corte.png" alt="Corte de cabelo">
+        <img src="./src/img/unha.png" alt="Manicure">
+        <img src="./src/img/escova.png" alt="Cabelereira">
+    </div>
 
     <footer class="footer">
 
+        <nav>
+            <ul>
+                <li>instagram</li>
+                <li>Face</li>
+                <li>Whata</li>
+            </ul>
+        </nav>
+
+        <div class="criador">
+            <p>J<span>&</span>S Developers</p>
+        </div>
+
     </footer>
-    
+
+    <script type="text/javascript" src="./src/js/carrossel.js"></script>
 </body>
+
 </html>

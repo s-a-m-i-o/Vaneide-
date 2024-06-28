@@ -1,76 +1,43 @@
 
 .header {
+    background-color: #fff;
     display: flex;
-    align-items: center;  
-    justify-content: space-between; 
-    background-color: #c26dec93; 
-    height: 160px;
-    border-bottom: 5px solid rgb(92, 5, 114);
-    color: #000;
-    
+    flex-direction: column;
 }
 
-.header img {
-    width: 150px;
-    border-radius: 50%;
-    margin-right: 15px;
-}
-
-.logo {
-    display: flex;
-    align-items: center;    
-}
-
-.menu {
-    display: flex;
-    flex-direction: row;
-}
-
-.menu li {
-    margin: 5px;
-    padding: 10px 20px;
-}
-
-.menu li.item {
-    font-size: 16px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    border:1px solid black;
-    border-radius:10px;
-    transition: 0.3s ease-in-out;
-}
-
-.menu li.item:hover {
-    font-size: 16px;
-    border:1px solid black;
-    border-radius:10px;
-    background-color: rgb(105, 5, 136);
-    color: #fff;
-}
-
-.conteudo {
+.header .logo {
     display: flex;
     align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    width: 100%;
-    height: 500px;
-    
+    padding: 5px;
 }
 
-.conteudo img {
-    width: 300px;
+.header .logo h1 {
+    font-weight: 200;
+    font-family: 'Dancing Script';
+
 }
 
-.conteudo .texto {
-    
-    font-size: 26px;
-    margin-top: 15px;
-    padding: 3px 5px;
+.header .logo img {
+    width: 120px;
 }
 
-.footer {
-    background-color: #c26dec93;
-    height: 99px;
-    border-top: 5px solid rgb(92, 5, 114);
+.header nav {
+    background-color: #232323;
+    display: block;
 }
 
+.header .menu {
+    height: 4.0rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.header .menu a {
+    color: #fff;
+    transition: 0.3s;
+}
+
+.header .menu a:hover {
+    color: yellow;
+}
