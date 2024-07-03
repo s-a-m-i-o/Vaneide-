@@ -1,8 +1,9 @@
 .header {
-    background-color: #e7e6e6;
+    background-color: var(--corpadrao);
     display: flex;
     flex-direction: column;
     border-bottom: 3px solid #232323;
+    margin-bottom: 30px;
 }
 
 .header .logo {
@@ -34,13 +35,18 @@
 .carrossel {
     position: relative;
     width: 100%;
+    max-width: 1440px;
+    height: 600px;
     margin: auto;
+    padding: 0px 4%;
     border-bottom: 3px solid #232323;
 }
 
 .carrossel img {
     width: 100%;
-    transition: 0.5s ease-in-out;
+    height: 550px;
+    box-shadow: 0px 0px 10px black;
+    border-radius: 10px;
 }
 
 .servicos {
@@ -59,7 +65,7 @@
     height: 350px;
     border-radius: 7px;
     box-shadow: 2px 2px 2px #232323;
-    background-color: #e7e6e6;
+    background-color: var(--corpadrao);
 }
 
 .servicos .item .subtitulo {
@@ -83,34 +89,42 @@
 
 
 .contato {
-    background-color: #e7e6e6;
-    height: 300px;
-    text-align: center;
+    background-color: var(--corpadrao);
+    height: 200px;
     border: 2px solid #232323;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .contato ul {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 300px;
 }
 
-.contato ul .item {
+.contato ul {
     font-size: 5rem;
     transition: .3s;
 }
 
-.contato li:hover .item.fa-whatsapp {
+.contato ul li {
+    padding: 10px 40px;
+}
+
+.contato li:hover .fa-whatsapp {
     color: green;
+    text-shadow: 1px 1px 15px rgb(5, 238, 5);
 }
 
-.contato li:hover .item.fa-instagram {
-    color: rgb(209, 45, 72);
+.contato li:hover .fa-instagram {
+    color: red;
+    text-shadow: 1px 1px 15px rgb(238, 5, 5);
 }
 
-.contato li:hover .item.fa-facebook {
+.contato li:hover .fa-facebook {
     color: blue;
+    text-shadow: 1px 1px 15px rgb(68, 58, 207);
 }
 
 .footer {
@@ -142,14 +156,17 @@
 
 .footer li:hover .fa-whatsapp {
     color: green;
+    text-shadow: 1px 1px 15px rgb(5, 238, 5);
 }
 
 .footer li:hover .fa-instagram {
     color: rgb(209, 45, 72);
+    text-shadow: 1px 1px 15px rgb(238, 5, 5);
 }
 
 .footer li:hover .fa-facebook {
     color: blue;
+    text-shadow: 1px 1px 15px rgb(68, 58, 207);
 }
 
 .criador {

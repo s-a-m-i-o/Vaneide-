@@ -1,7 +1,12 @@
 @media(max-width:480px) {
     .header {
         flex-direction: column;
-        height: 100%;
+        width: 100%;
+    }
+
+    .header .logo h1 {
+        font-size: 2rem;
+        text-align: center;
     }
 
     .logo {
@@ -17,6 +22,21 @@
 
     .header .menu {
         flex-direction: column;
+    }
+
+    .carrossel {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 200px;
+        padding: 10px;
+        border: 0;
+    }
+
+    .carrossel img {
+        width: 350px;
+        height: auto;
     }
 
     .menu li.item {
@@ -37,5 +57,13 @@
         font-weight: 800;
         padding: 5px;
     }
-        
+
+    .contato ul {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .contato ul li {
+        font-size: 2rem;
+    }
 }
